@@ -1,0 +1,341 @@
+					MODULE = 9m53-ema-john-with-router-and-custom-hook
+
+
+
+
+
+রাউটার সেটাপ করার জাস্ট পাঁচটা স্টেপ। 
+
+১. প্রথমেই তোমাকে BrowserRouter ইউজ করতে হবে। 
+
+২. তার ভিতরে Switch ইউজ করবে। 
+
+৩. তারভিতরে থাকবে এক একটা Route এ। 
+
+৪. সেইসব Route এর মধ্যে থাকবে path 
+
+৫. আর Route গুলার পেটের মধ্যে থাকবে এক একটা কম্পোনেন্ট। 
+
+
+
+
+
+
+	-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+			module : 53-1 Module overview, clone external projects with personal git setup
+
+
+
+
+	clone external projects with personal git setup:	[ onno repogitory clone kore same folder theke nijer repogitory te update kora ]
+	-----------------------------------------------
+
+
+
+	1. copy project from github.
+
+	2. open with code .
+	
+
+	3. npm install:
+
+		it will install all the package [ if font woaseme use that project font-wasome will install and others also ]
+
+
+
+	github change remote origin url:
+	--------------------------------
+		
+		google   >>>    github change remote origin url
+				https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories
+
+
+			git remote -v
+		
+			git remote set-url origin https://github.com/rased100/ema-john-with-router.git		[ new repogitory link of github (git remote add origin https://github.com/rased100/ema-john-with-router.git) ]
+						  ----------------------------------------------------
+
+
+PS C:\projects\milestone-9\module-53\ema-john-simple-with-search-and-saved-module-49> git remote -v
+origin  https://github.com/ProgrammingHero1/ema-john-simple-with-search-and-saved-module-49.git (fetch)
+origin  https://github.com/ProgrammingHero1/ema-john-simple-with-search-and-saved-module-49.git (push) 
+PS C:\projects\milestone-9\module-53\ema-john-simple-with-search-and-saved-module-49> git remote set-url origin https://github.com/rased100/ema-john-with-router.git
+PS C:\projects\milestone-9\module-53\ema-john-simple-with-search-and-saved-module-49> git remote -v
+origin  https://github.com/rased100/ema-john-with-router.git (fetch)
+origin  https://github.com/rased100/ema-john-with-router.git (push)
+PS C:\projects\milestone-9\module-53\ema-john-simple-with-search-and-saved-module-49> 
+
+PS C:\projects\milestone-9\module-53\ema-john-simple-with-search-and-saved-module-49> git add .
+PS C:\projects\milestone-9\module-53\ema-john-simple-with-search-and-saved-module-49> git commit -m"updated the inventory page"  
+[main 56bd962] updated the inventory page
+ 2 files changed, 12 insertions(+), 1 deletion(-)
+ create mode 100644 src/components/Inventory/Inventory.js
+PS C:\projects\milestone-9\module-53\ema-john-simple-with-search-and-saved-module-49> git push
+Enumerating objects: 64, done.
+Counting objects: 100% (64/64), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (53/53), done.
+Writing objects: 100% (64/64), 2.09 MiB | 138.00 KiB/s, done.
+Total 64 (delta 11), reused 53 (delta 6), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/rased100/ema-john-with-router.git
+ * [new branch]      main -> main
+PS C:\projects\milestone-9\module-53\ema-john-simple-with-search-and-saved-module-49> 
+
+
+
+
+
+
+
+
+.end------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 53-2 Install React router and implement simple router setup
+
+
+
+	ema-john-simple   >>>  npm install react-router-dom
+
+
+
+	seen and work abour route:
+
+function App() {
+  return (
+    <div>
+      <Header></Header>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Shop></Shop>
+          </Route>
+          <Route path="/shop">
+            <Shop></Shop>
+          </Route>
+          <Route path="/rewiew">
+            <OrderReview></OrderReview>
+          </Route>
+          <Route path="/inventory">
+            <Inventory></Inventory>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+.end------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 53-3 Write useState and useEffect in a different file and import it
+
+
+
+	resources:   https://ema-john.firebaseapp.com/
+
+
+
+6:08s	hooks:
+	------
+
+		src   >>>   hooks
+
+
+
+const useProducts = () => {
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        fetch('./useProducts.js')
+            .then(res => res.json())
+            .them(data => setProducts(data));
+    }, [])
+    return [products];						[ ekadhik jinis return korle []er vitor return korte hoy ]
+}
+
+
+
+
+.end------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 53-4 Recap useProducts, create useCart and use it
+
+
+
+	seen and work
+
+
+.end------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 53-5 Create review page structure and Display Shopping cart
+
+
+
+
+	seen and work
+
+
+.end------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 53-6 Implement Review Item and apply Remove Item handler
+
+
+
+
+10:35s	Remove item:
+
+
+
+.end------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 53-7 Make Data consistent across UI and stored data
+
+
+
+
+const OrderReview = () => {
+    const [products, setProducts] = useProducts();
+    const [cart, setCart] = useCart(products);
+    const handleRemove = key => {
+        const newCart = cart.filter(product => product.key !== key);
+        setCart(newCart);
+        removeFromDb(key);							###
+    }
+    return (
+        <div className="shop-container">
+            <div className="product-container">
+                {
+                    cart.map(product => <ReviewItem
+                        key={product.key}
+                        product={product}
+                        handleRemove={handleRemove}
+                    ></ReviewItem>)
+                }
+            </div>
+            <div className="cart-container">
+                <Cart cart={cart}></Cart>
+            </div>
+        </div>
+    );
+};
+
+export default OrderReview;
+
+
+
+.end------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 53-8 (conceptual) useState, useEffect, and remove using filter
+
+
+
+	remove item by filter:
+
+	
+	const numbs = [12, 22, 154, 56, 55, 58, 65, 95, 75];
+
+	numbs.filter(num => num !== 55)				[ create array which is not equal to 55    or    remove = 55   ] 
+
+	(8) [12, 22, 154, 56, 58, 65, 95, 75]
+
+
+
+
+.end------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 53-9 Module Summary, use NavLink and recap custom hook
+
+
+
+
+
+
+
+	Module Summary, use NavLink and recap custom hook
+
+
+
+
+
+
+
+
+
+.end---------------------------------------------------------  module ---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+

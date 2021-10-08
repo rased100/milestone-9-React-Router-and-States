@@ -1,0 +1,161 @@
+					MODULE = 9m55-Assignment-9-Educational-Website
+
+
+
+
+
+
+
+
+	Private Repo:
+			>>>   https://classroom.github.com/a/cOVlSN4s
+
+
+			>>>   https://github.com/ProgrammingHeroWC4/review-website-rased100
+
+
+
+	ডেপ্লয় রাউটার ওয়েবসাইট 
+
+		ড্র্যাগ এন্ড ড্রপ করে netlify তে রিলিজ দিলে react রাউটার সরাসরি কাজ করবে না। সেটা করার জন্য তোমার build ফোল্ডার ড্র্যাগ করে ড্রপ করার আগে একটা ফাইল তৈরি করে নিতে হবে। 
+		সেই ফাইল এর নাম হবে: _redirects আর তারমধ্যে জাস্ট এক লাইন থাকবে। সেখানে লেখা থাকবে: /* /index.html 200 তারপর এই ফাইল সহ ডেপ্লয় করলেই হবে। 
+
+
+
+
+
+
+
+			module : 55-1 Develop Educational website with React Router
+			-----------------------------------------------------------
+
+
+
+1:50s	Educational site:	3:25s
+
+		school, collage, coching, shikhano hoy ai type er
+
+
+-------------
+
+http://preview.themeforest.net/item/courster-educational-platform-and-learning-system-template/full_screen_preview/28766398?_ga=2.14724784.768831916.1633281977-1814665184.1632286337
+
+
+	#	http://demo.holathemes.com/coursterhtml/courses.html
+
+-------------
+
+
+
+3:25s	Design:
+
+		themeforest.net   >>>   English learning, IELS
+
+
+
+
+5:00s	ki ki Korte hobe:
+========================
+
+
+		1. 	# css freamwork use korte hobe. je kono 1ta.
+
+5:40s		2. 	# Navigation thakbe Header er moddhe. ( website er name thakbe [ 13:30s ] )
+
+			# a). minimum 4 ta rout thakte hobe. Relode hobe na.
+
+			# b). (Footer thakbe - Header thakbe) => All time. Middle er ongsho Route hobe
+
+6:24s		R5:	# c). 404 thakbe.
+
+6:35s  7:50s	R1:	d). 	# Home Page ( minimum 4 tar moddhe 1 ta => Home Page )
+
+				# Header Footer er upore 1 ta jinish thakbe. See website ki thake. (14:10s)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+	#https://www.edx.org/?source=aw&awc=6798_1633283019_e732fc484d291c66b2941a5594f076e3&utm_source=aw&utm_medium=affiliate_partner&utm_content=text-link&utm_term=713679_Dotdash
+
+https://join.skillshare.com/premium-231/?clickid=zonQWc2hZxyIUEQVtuydD0F3UkBV683Yt36E2g0&irgwc=1&utm_content=4650&utm_term=Dotdash&utm_campaign=2104074&affiliateRef=6595003&utm_medium=affiliate-referral&utm_source=IR
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+6:50s			#		home page e service gula 4ta ekta jaygay dekhate hobe	
+
+
+			#		service gular name, price, Image, 
+
+8:15s			#		service gular jonno fake data toiri korte hobe
+
+
+8:30s			# 	e). / route. => home page
+
+8:40s		R2:	#	f). About
+
+		R4:	#	g). nijer mon moto 1ta route
+
+8:50s		R3:	#	h). services 1 ta special route
+
+			#**		header footer and 7   8   ta service thakte hobe. er moddhe 4 ta service home page e dekhabe. [ 6:50s ]	
+
+
+
+
+10:10s	Bonus:
+--------------
+
+	1. Readme file edit
+
+		# 	site link (13:16s),
+
+		# 	name website, 
+		# 	3 ta point,
+		# 	vs code e edit korte push korte hobe.
+
+	2. 	#	code, component  Organize hote hobe, 
+
+		#	comment.
+
+
+
+
+
+
+11:00s	Optional:
+-----------------
+
+	responsive
+
+	context api
+
+	dynamic routing
+
+	Local storage
+
+	
+
+
+
+
+
+		
+
+end-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+{/* <h2>Course: {courses.length}</h2> */}
+            {
+                courses.map(course =>
+                    <HomeServiceFour course={course}></HomeServiceFour>
+                )
+                // courses.for(i = 0 i < courses.length; i++){
+                // <HomeServiceFour course={course}></HomeServiceFour>
+                // }
+            }
+            {/* {
+                courses.map(course => <Services course={course}></Services>)
+            } */}

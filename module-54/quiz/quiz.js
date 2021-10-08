@@ -1,0 +1,1 @@
+const [data, setData] = useState([{ name: 'Chokina , tui amk bhule gesos kin' }])

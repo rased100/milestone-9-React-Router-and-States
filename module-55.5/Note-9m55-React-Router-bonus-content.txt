@@ -1,0 +1,89 @@
+					MODULE = 9m55-React-Router-bonus-content
+
+
+
+
+
+
+
+			module : 55_5-1 When And How We Should Store Data To Any Storage
+
+
+	Discussion about Local Storage.
+
+
+
+end---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 55_5-2 Implement Add To Cart To Persists Data
+
+
+	creating fakedb.js
+
+
+
+
+
+
+
+end---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 55_5-3 Implement Remove Item From Stored Cart
+
+
+Remove Item From Stored Cart
+
+
+
+
+2:42s
+
+
+
+end---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 55_5-4 Clear The Cart And Overview Of The Data Storage
+
+
+
+
+
+	Clear The Cart
+
+
+
+end---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 55_5-5 Difference Between Usestate, Useeffect, Custom Hook And Others
+
+
+
+
+	 Usestate, Useeffect, Custom Hook And Others
+
+
+end---------------------------------------------------------------- module -----------------------------------------------------------------

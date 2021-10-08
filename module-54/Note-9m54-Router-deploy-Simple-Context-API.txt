@@ -1,0 +1,448 @@
+					MODULE = 9m54-Router-deploy-Simple-Context-API
+
+
+
+
+
+
+আপতত পাঁচটা জিনিস খেয়াল করলেই প্রথম রাউন্ডে রাউটার সম্পর্কে জানবে। 
+
+ 
+
+১. সিম্পল রাউট কিভাবে সেট করে। জাস্ট পাঁচটা স্টেপ দিয়ে 
+
+২. Not Found বা ৪০৪ টাইপের রাউট কিভাবে সেট করে 
+
+৩. ডায়নামিক রাউট কিভাবে সেট করে। কিভাবে ডায়নামিক রাউট এর পাথ সেট করে 
+
+৪. কম্পোনেন্ট এর ভিতরে গিয়ে কিভাবে ডাইনামিক রাউট এর রাউট প্যারামিটার থেকে ভ্যালু নিয়ে আসা যায়। তখন কোন হুক ইউজ করতে হয়। এবং সেটা দিয়ে ডাইনামিক url 
+তৈরি করে কোন ডাটা লোড করার থাকলে সেটা কিভাবে করা যায়। 
+
+৫. বাটনে ইভেন্ট হ্যান্ডলার দিয়ে কিভাবে ক্লিক করেলে রাউট সেট করে যায় 
+
+৬. [ এইটা, এখন বলমু না। বলতে লইজ্জা লাগে। তবে নেক্সট মাইলস্টোন এই গোপন জিনিস ফাঁস হয়ে গেলেও যেতে পারে ]
+
+
+
+
+	----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+			module : 54-1 Module Introduction Use Children props for dynamic content
+
+
+
+resources:   https://ema-john.firebaseapp.com/
+
+
+4:03s
+
+8:26s
+
+
+
+---
+<Cart cart={cart}>
+                    <button className="btn-reguler">Place Order</button>
+                </Cart>
+
+---
+
+
+
+
+
+.end----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 54-2 Create order placed and clear cart and stored data
+
+
+
+
+	Create order placed and clear cart and stored data
+
+
+
+
+.end----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 54-3 Debug add to cart bug and update quantity of existing item
+
+
+
+
+
+
+shop.js:
+-------
+
+        const exists = cart.find(pd => pd.key === product.key);
+        let newCart = [];
+        if (exists) {
+            const rest = cart.filter(pd => pd.key !== product.key);
+            exists.quantity = exists.quantity + 1;
+            newCart = [...rest, product];
+        }
+        else {
+            product.quantity = 1;
+            newCart = [...cart, product];
+        }
+
+
+
+
+.end----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 54-4 Deploy react router and introduction to react dev tool
+
+
+
+
+	google   >>>   netlify react router 404
+
+
+
+	public   >>>   create file (  _redirects  )
+		
+	_redirects   >>>   type  (   /* /index.html 200    )
+
+	save
+
+
+
+
+7:40s
+
+
+	google   >>>   react dev tool   >>> extention Add to chrome
+
+		 >>>   inspact   >>> components
+
+		 >>>   inspact   >>> profiler
+
+
+
+
+
+.end----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 54-5 Explore Conditional Rendering in React
+
+folder: conditional-formatting-module-54-main
+file: user.js
+-------------
+
+
+
+
+const User = (props) => {
+    const { familiar } = props;
+
+    // 1. Element Variable
+    let greeting;
+    if (familiar) {
+        greeting = <h5>Hello Bondhu How are you?</h5>
+    }
+    else {
+        greeting = <h5>Who the Hell are you? DGM.</h5>
+    }
+    //2. ternary operation
+    // condition ? (display this part if condition true): (if condition false)
+
+    return (
+        <div>
+            <div>
+                <h2>Greetings</h2>
+                {greeting}
+            </div>
+            <div>
+                <h2>Food</h2>
+                {familiar ? <h4>Biryani</h4> : <h4>khuchra poisa nai</h4>}
+            </div>
+            <div>
+                <h2>a lot of things</h2>
+                {
+                    familiar ? <div>
+                        <h3>My title, Friend</h3>
+                        <p>This is paragraph</p>
+                    </div>
+                        : <div>
+                            <h3>Door closed</h3>
+                            <p>Chabi harai felsi</p>
+                        </div>
+                }
+            </div>
+            <div>
+                <h2>Profession</h2>
+                {familiar ? <Teacher></Teacher> : <Player></Player>}
+            </div>
+            <div>
+                <h2>Connection</h2>
+                {familiar && <div>
+                    <h5>Dosto tomar phone number dao</h5>
+                </div>}
+                {
+                    familiar && <Player></Player>
+                }
+            </div>
+            <div>
+                <h2>Share Drink</h2>
+                {
+                    familiar || <h4>Khamu daab er pani</h4>
+                }
+            </div>
+        </div>
+    );
+};
+
+export default User;
+
+
+
+
+
+
+
+
+.end----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 54-6 Grandfather Context Create a Family Tree
+
+
+data transper by props:
+
+	App.js   >>>   <GrandFather house={house}></GrandFather>   >>>   grandfather.js   >>>    <Father house={house}></Father>   >>>  
+
+		father.js	>>>	<MySelf house={house}></MySelf>		>>>	myself.js   >>>   <small>house: {house}</small>  
+
+
+
+
+
+
+
+
+
+.end----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 54-7 Prop Drilling to pass data to a many level components
+
+
+
+	Prop Drilling to pass data
+
+
+
+	seen and understanding
+
+
+
+
+.end----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 54-8 Simple Introduction to Context API to avoid Prop drilling
+
+
+
+	React contex:
+
+		google it.
+
+
+
+		
+3:00s		
+	createContext()
+
+
+app.js:
+------
+
+.Provider:
+
+
+export const RingContext = createContext('ring');			###
+
+function App() {
+  const [house, setHouse] = useState(2);
+  const ornaments = 'Shokto Mati Ring'
+  return (
+    <RingContext.Provider value={[ornaments, house]}>			###
+      <div className="App">
+        <button
+          onClick={() => setHouse(house + 1)}
+        >Buy a new house</button>
+
+        <GrandFather house={house}></GrandFather>
+      </div>
+    </RingContext.Provider>						###
+  );
+}
+
+
+
+
+
+import React, { useContext } from 'react';				###
+import { RingContext } from '../../App';				###
+
+const Special = () => {
+
+    const [ornaments, house] = useContext(RingContext);			###
+    console.log(ornaments)
+    return (
+        <div>
+            <h2>Special: </h2>
+            <small>{ornaments}</small>					###
+            <br />
+            <small>house: {house}</small>
+        </div>
+    );
+};
+
+
+---
+
+.end----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 54-9 Module Summary and multiple value in context
+
+
+
+	React contex:	app.js  to  special and Aunty	[ data send by context ]
+
+	app.js:
+
+export const RingContext = createContext('ring');
+
+function App() {
+  const [house, setHouse] = useState(2);
+  const ornaments = 'Shokto Mati Ring'
+  return (
+    <RingContext.Provider value={[ornaments, house]}>
+      <div className="App">
+        <button
+          onClick={() => setHouse(house + 1)}
+        >Buy a new house</button>
+
+        <GrandFather house={house}></GrandFather>
+      </div>
+    </RingContext.Provider>
+  );
+}
+
+export default App;
+
+
+
+
+	special:
+
+
+import React, { useContext } from 'react';
+import { RingContext } from '../../App';
+
+const Special = () => {
+
+    const [ornaments, house] = useContext(RingContext);
+    console.log(ornaments)
+    return (
+        <div>
+            <h2>Special: </h2>
+            <small>{ornaments}</small>
+            <br />
+            <small>house: {house}</small>
+        </div>
+    );
+};
+
+export default Special;
+
+
+
+
+
+
+	Aunty:
+
+
+
+import React, { useContext } from 'react';
+import { RingContext } from '../../App';
+
+const Aunty = () => {
+
+    const [ornaments, house] = useContext(RingContext);
+    return (
+        <div>
+            <h2>Aunty</h2>
+            <p>house: {house}</p>
+            <p>{ornaments}</p>
+        </div>
+    );
+};
+
+export default Aunty;
+
+
+
+
+
+
+
+
+.end---------------------------------------------------------------- module ------------------------------------------------------------------------
+
+

@@ -1,0 +1,629 @@
+					MILESTONE-9
+					----------
+
+		মাইলস্টোন ৯ টেনটেটিভ আউটলাইন:
+
+	সেপ্টেম্বর ২৭: মডিউল ৫১: React Bootstrap, Material UI, Tailwind 
+
+	সেপ্টেম্বর ২৮: মডিউল ৫২: React Router and State management
+
+	সেপ্টেম্বর ২৯: রাত ৯.০০: কন্সেপচুয়াল সেশন
+
+	সেপ্টেম্বর ২৯: মডিউল ৫২.৫: প্রাকটিস ডে
+
+.
+
+	সেপ্টেম্বর ৩০: মডিউল ৫৩: More Router, React Dev tool
+
+	অক্টোবর ১:মডিউল ৫৪: Simple State Management Using Context API
+
+	অক্টোবর ২: রাত ৯.০০: কন্সেপচুয়াল সেশন
+
+	অক্টোবর ২: মডিউল ৫৪.৫: প্রাকটিস/রিভিশন ডে
+
+..
+
+	###	অক্টোবর ৩: এসাইনমেন্ট ৯(মডিউল ৫৫)
+
+	অক্টোবর ৪: বোনাস মডিউল (মডিউল ৫৫.৫)
+
+	অক্টোবর ৫: মাইলস্টোন ১০ (মডিউলে ৫৬)
+
+
+
+
+	-----------------------------------------------------------------------------------------------------
+
+					নেক্সট মাইলস্টোন এবং দূর্গা পূজার ছুটি 
+					---------------------
+
+
+
+		মাইলস্টোন ১০ টেনটেটিভ আউটলাইন:
+
+	অক্টোবর ৫: মডিউলে ৫৬: Simple Firebase authentication
+
+	অক্টোবর ৬: মডিউল ৫৭: Login Form and Route Integration
+
+	অক্টোবর ৭: রাত ৯.০০: কন্সেপচুয়াল সেশন
+
+	অক্টোবর ৭: মডিউল ৫৭.৫: Simple Firebase Practice 
+
+.
+
+	অক্টোবর ৮: মডিউল ৫৮: Shared auth and Private Route
+
+	অক্টোবর ৯: মডিউল ৫৯: React Auth Recap and deploy 
+
+	অক্টোবর ১০: রাত ৯.০০: কন্সেপচুয়াল সেশন
+
+	অক্টোবর ১০: মডিউল ৫৯.৫: Firebase রিভিশন ডে
+
+.
+
+ 
+
+	###	অক্টোবর ১১: এসাইনমেন্ট ১০ প্রথম দিন (মডিউল ৬০)
+
+	###	অক্টোবর ১২: এসাইনমেন্ট ১০ দ্বিতীয় দিন 
+
+	অক্টোবর ১৩: bonus module (মডিউলে ৬০.৫) 
+
+ 
+
+		অক্টোবর ১৪: দূর্গা পূজার ছুটি 
+
+		অক্টোবর ১৫: দূর্গা পূজার ছুটি 
+
+ 
+
+	অক্টোবর ১৬: মাইলস্টোন ১১ (মডিউলে ৬১) 
+
+
+
+
+
+		দূর্গা পূজা উপলক্ষে অফিসিয়ালভাবে অক্টোবর ১৪, ১৫ তে কোন মডিউল রিলিজ হবে না। তাছাড়া অক্টোবর ১৩ বোনাস ডে। এমনকি ১২ তারিখ এসাইনমেন্ট ১০ এর ৬০ 
+	মার্কসের সেকেন্ড দিন। সো, কেউ দূর্গা পূজা ভালোভাবে উদযাপন করতে চাইলে। এসাইনমেন্ট ১১ দিনে সাবমিট করে--১২, ১৩, ১৪, ১৫ উদযাপন করতে পারবে। তাকে একটু 
+	স্ট্র্যাটেজিক হতে হবে। এবং মাইলস্টোন আগে থেকেই ভালোভাবে দেখে শেষ করে ফেলতে হবে। 
+
+-------------------
+
+######		আমাদের কোর্সের আউটলাইন, নভেম্বরের ১৫ তারিখের মধ্যে ফিনিশ এবং ওভারঅল সিচুয়েশন এর মধ্যে যেটা সর্বোচ্চ পসিবল সেটা এডজাস্ট করার চেষ্টা করেছি। এই বিষয়ে কারো কোন গঠনমূলক ফিডব্যাক বা সাজেশন থাকলে অবশ্যই আমাদের জানাবে। 
+
+------------------- 
+
+	আর যারা দূর্গা পূজা উদযাপন করবে না। তারা এই দুই দিন রিভিশন দিয়ে দিতে পারবে। ১৪ তারিখ বৃহস্পতিবার আমাদের গ্রূপ সাপোর্ট থাকবে। আর ১৫ তারিখ শুক্রবার সেদিন সাপোর্ট থাকবে না। 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+				MODULE = 9m51-React-Bootstrap-Material-UI-Axios-Rechart
+
+
+
+	এই মডিউল দিয়ে শুরু হচ্ছে ইন্টারমেডিয়েট লেভেলের React শেখা। এই মাইলস্টোন এ আমরা react রাউটার শিখবো, context api, react bootstrap, 
+	হালকা material ui দেখবো এবং আরো কিছু দরকারি জিনিস। 
+
+
+
+
+
+			module : 51-1: Module Introduction Use Bootstrap CDN in React
+
+
+
+	bootstrap in react:
+
+
+	button:
+
+		<button type="button" class="btn btn-primary">Primary</button>
+				      -----
+
+				      className=
+
+
+		bootstrap theke copy kore class = className  korte hobe.	[ ctrl + f	>>>	replace ]
+
+
+
+
+	cart:
+
+		{
+        items.map(item => <Cart
+          item={item}
+        ></Cart>)
+      }
+
+
+
+const Cart = (props) => {
+    const { name, img, description } = props.item;
+    return (
+        <div className="col">
+            <div className="card">
+                <img src={img} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{name}</h5>
+                    <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+
+
+
+end------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 51-2 Install React Bootstrap in your react application
+
+
+	react-google-anything
+
+
+
+	react-bootstrap:
+
+		google   >>>   react-bootstrap   >>>   https://react-bootstrap.github.io/   >>>   get started  
+
+ 
+			1. command promt or terminal  >>>   npm install react-bootstrap@next bootstrap@5.1.1
+
+			2. app.js or index.js	      >>>   import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
+
+11:54s
+
+
+import logo from './logo.svg';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { ButtonGroup, Button, Spinner } from 'react-bootstrap';
+
+function App() {
+  return (
+    <div className="App">
+      <Button variant="primary">Hello me</Button>
+      <Spinner animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+end------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 51-3 Explore News API to integrate react bootstrap Card
+
+
+
+
+	news api	>>>	https://newsapi.org/
+
+
+
+
+
+
+4:00s	useEffect for news api:
+
+
+		## api kye https://newsapi.org/v2/everything?q=tesla&from=2021-08-28&sortBy=publishedAt&apiKey=3d0e91d42c884418b7c50e46ca19ce50
+
+			aivabe use korte hoy na. onno keu dekhe felte pare
+
+
+		copy from bootstrap:
+
+			jei part ta repet hobe sudhu sei ta copy korte hobe.
+
+
+
+
+
+9:40s
+
+		destructureing
+
+
+
+
+
+end------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 51-4 Display News and add Loading Spinner on your app
+
+
+
+4:15s	spinner:
+---------------
+
+ {
+        news.length === 0 ?				#  ? condition
+          <Spinner animation="border" />		#  true hole  speen
+          :
+        <Row xs={1} md={3} className="g-4">		#  true hole aita dekhabe
+          {
+            news.map(nw => <News news={nw}></News>)
+          }
+        </Row>
+      }
+
+------
+
+
+import logo from './logo.svg';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+import { ButtonGroup, Button, Spinner, Row, Col, Card } from 'react-bootstrap';
+import { useEffect, useState } from 'react';
+import News from './components/News/News';
+
+function App() {
+  const [news, setNews] = useState([]);
+  useEffect(() => {
+    fetch('https://newsapi.org/v2/everything?q=tesla&from=2021-08-25&sortBy=publishedAt&apiKey=3d0e91d42c884418b7c50e46ca19ce50')
+      .then(res => res.json())
+      .then(data => setNews(data.articles));
+  }, []);
+
+  return (
+    <div className="App">
+      {
+        news.length === 0 ?
+          <Spinner animation="border" />
+          :
+          <Row xs={1} md={3} className="g-4">
+            {
+              news.map(nw => <News news={nw}></News>)
+            }
+          </Row>
+      }
+    </div>
+  );
+}
+
+export default App;
+
+
+
+--------------end---------- react-bootstrap---------------------xxx
+
+
+
+
+end------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 51-5 Getting started with Material UI, button, rating
+
+
+
+
+	meterial ui:
+		https://mui.com/	
+
+			1. 	>>>	npm install @mui/material @emotion/react @emotion/styled
+
+
+
+	button:
+
+		<Button variant="contained">My first button</Button>
+
+
+	rating:
+		<Rating name="read-only" value={3} readOnly />
+
+	slider:
+
+	meterial Icon:
+
+	drower:
+
+	ETC:
+
+
+
+
+
+
+
+end------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 51-6 Display News using Material UI Card
+
+
+
+
+
+
+const Newspaper = () => {
+    const [articles, setArticles] = useState([]);
+    useEffect(() => {
+        fetch('https://newsapi.org/v2/everything?q=bitcoin&apiKey=3d0e91d42c884418b7c50e46ca19ce50')
+            .then(res => res.json())
+            .then(data => setArticles(data.articles))
+    }, [])
+    return (
+        <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                {
+                    articles.map(article => <Grid item xs={2} sm={4} md={4}>				###
+                        <News article={article}></News>
+                    </Grid>)
+                }
+            </Grid>
+        </Box>
+    );
+};
+
+export default Newspaper;
+
+
+
+
+end------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 51-7 Setup tailwind css with Create React App
+
+
+
+	>>>	https://tailwindcss.com/docs/guides/create-react-app
+
+
+
+	react tailwind install:		>>>	https://tailwindcss.com/docs/guides/create-react-app
+	-----------------------
+
+		1.   >>>    npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+
+
+
+		2.   >>>   npm install @craco/craco
+
+
+		3.   >>>   	package.json
+
+
+				Add   >>>   	"start": "craco start",
+     						"build": "craco build",
+     						"test": "craco test",
+
+				remove>>>	"start": "react-scripts start",
+    						"build": "react-scripts build",
+    						"test": "react-scripts test",
+
+
+
+		4.   >>>	craco.config.js
+
+
+					// craco.config.js
+					module.exports = {
+  						style: {
+    						postcss: {
+      						plugins: [
+        						require('tailwindcss'),
+        						require('autoprefixer'),
+      					],
+   					},
+  					},
+					}
+
+
+
+		5.   >>>	npx tailwindcss-cli@latest init
+
+
+
+		6.   >>>	Add  >>>	purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+
+				remove >>>	purge: [],
+
+
+
+		7.   >>> 	/* ./src/index.css */			[ index.css ]
+
+				past:
+					@tailwind base;
+					@tailwind components;
+					@tailwind utilities;
+
+
+
+
+		8.   >>>	Finally, ensure your CSS file is being imported in your ./src/index.js file:
+
+
+
+
+
+
+
+
+
+
+
+14:09s
+
+
+
+
+custom css talwind:
+
+
+module.exports = {
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    textColor: {							###
+      'primary': '#3490dc',
+      'secondary': '#ffed4a',
+      'danger': '#e3342f',
+      'custom': 'goldenrod'
+    }
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+			<p className="custom">custom</p>
+
+
+end------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 51-8 Use reachart to draw any type of chart using React
+
+
+	google >>>  rechart
+
+
+
+
+4:30s
+
+
+
+
+end------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+			module : 51-9 Module Summary, Axios, react spring animation
+
+
+
+
+bootstrap react
+
+meterial ui
+
+tailwind-react
+
+rechart
+
+
+
+	more:
+
+4:29s		axios:					[ fetch er poriborte ]
+		--------------------------
+			https://axios-http.com/
+
+	installtion:
+	------------
+
+
+	1. npm install axios
+
+
+
+
+		animation:
+		-------------------------
+
+			https://react-spring.io/basics
+
+
+	google   >>>   react spring
+
+	1. >>>   npm install react-spring
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
